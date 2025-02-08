@@ -3,7 +3,7 @@
 <br />
 
 <h1>Active Directory (Part 4 Network File Sharing)</h1>
-I will be demonstrating how you can assign permissions to various file types.
+I will be demonstrating how you can assign permissions.
 
 <h2>Walkthrough</h2>
 
@@ -11,13 +11,13 @@ I will be demonstrating how you can assign permissions to various file types.
 
 <img width="865" alt="Screenshot 2025-02-07 at 15 15 58" src="https://github.com/user-attachments/assets/2c990089-5910-43a7-b53d-a3361c63c1f8" />
 
-- For the read access folder, I assigned it to Domain Users and gave it read-only permission. For the write access folder, I also assigned it to Domain Users and gave it a read-write permission.
+- For the read access folder, I assigned it to the Domain Users security group and gave it read-only permission. For the write access folder, I also assigned it to Domain Users and gave it a read-write permission.
 
 <img width="953" alt="Screenshot 2025-02-07 at 15 16 55" src="https://github.com/user-attachments/assets/2d43a282-d05d-44ce-803a-3687f37a243d" />
 
 <img width="945" alt="Screenshot 2025-02-07 at 15 18 08" src="https://github.com/user-attachments/assets/52daf65a-cd12-4b0d-b178-c4fba96a40d4" />
 
-- For the no-access folder, I assigned it to Domain Admins and gave it read-write permission (Haven't done anything with the accounting folder yet).
+- For the no-access folder, I assigned it to the Domain Admins security group and gave it read-write permission (Haven't done anything with the accounting folder yet).
 
 <img width="894" alt="Screenshot 2025-02-07 at 15 18 52" src="https://github.com/user-attachments/assets/227cdb6a-1752-480d-9922-2f90499c646d" />
 
@@ -37,7 +37,7 @@ I will be demonstrating how you can assign permissions to various file types.
 
 <img width="887" alt="Screenshot 2025-02-07 at 15 23 50" src="https://github.com/user-attachments/assets/7ff83c64-9571-46cf-bbe5-82e25a2d3b82" />
 
-- The no-access folder can not be viewed nor edited despite having the read-write permission and that's because it was assigned to Domain Admins and not Domain Users, and the users created in ADUC only fall under Domain Users.
+- The no-access folder can not be viewed nor edited despite having the read-write permission and that's because it was assigned to Domain Admins and not Domain Users, and the users created in active directory users & computers only fall under Domain Users.
 
 <img width="1012" alt="Screenshot 2025-02-07 at 15 24 19" src="https://github.com/user-attachments/assets/6b1fde4c-b1dd-425d-a30b-1037a6d1f09c" />
 
